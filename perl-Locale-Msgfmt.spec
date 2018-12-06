@@ -80,11 +80,11 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.0/Locale/Msgfmt.pm
-/usr/lib/perl5/vendor_perl/5.28.0/Locale/Msgfmt/Utils.pm
-/usr/lib/perl5/vendor_perl/5.28.0/Locale/Msgfmt/mo.pm
-/usr/lib/perl5/vendor_perl/5.28.0/Locale/Msgfmt/po.pm
-/usr/lib/perl5/vendor_perl/5.28.0/Module/Install/Msgfmt.pm
+/usr/lib/perl5/vendor_perl/5.28.1Locale/Msgfmt.pm
+/usr/lib/perl5/vendor_perl/5.28.1Locale/Msgfmt/Utils.pm
+/usr/lib/perl5/vendor_perl/5.28.1Locale/Msgfmt/mo.pm
+/usr/lib/perl5/vendor_perl/5.28.1Locale/Msgfmt/po.pm
+/usr/lib/perl5/vendor_perl/5.28.1Module/Install/Msgfmt.pm
 
 %files dev
 %defattr(-,root,root,-)
