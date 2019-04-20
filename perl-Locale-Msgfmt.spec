@@ -4,11 +4,11 @@
 #
 Name     : perl-Locale-Msgfmt
 Version  : 0.15
-Release  : 10
+Release  : 11
 URL      : https://cpan.metacpan.org/authors/id/A/AZ/AZAWAWI/Locale-Msgfmt-0.15.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/A/AZ/AZAWAWI/Locale-Msgfmt-0.15.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libl/liblocale-msgfmt-perl/liblocale-msgfmt-perl_0.15-2.debian.tar.xz
-Summary  : 'Compile .po files to .mo files'
+Summary  : Compile .po files to .mo files
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-Locale-Msgfmt-license = %{version}-%{release}
@@ -24,6 +24,7 @@ gettext-tools.
 Summary: dev components for the perl-Locale-Msgfmt package.
 Group: Development
 Provides: perl-Locale-Msgfmt-devel = %{version}-%{release}
+Requires: perl-Locale-Msgfmt = %{version}-%{release}
 
 %description dev
 dev components for the perl-Locale-Msgfmt package.
@@ -42,7 +43,7 @@ license components for the perl-Locale-Msgfmt package.
 cd ..
 %setup -q -T -D -n Locale-Msgfmt-0.15 -b 1
 mkdir -p deblicense/
-mv %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/Locale-Msgfmt-0.15/deblicense/
+cp -r %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/Locale-Msgfmt-0.15/deblicense/
 
 %build
 export http_proxy=http://127.0.0.1:9/
