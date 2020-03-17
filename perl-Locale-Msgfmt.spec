@@ -4,7 +4,7 @@
 #
 Name     : perl-Locale-Msgfmt
 Version  : 0.15
-Release  : 12
+Release  : 13
 URL      : https://cpan.metacpan.org/authors/id/A/AZ/AZAWAWI/Locale-Msgfmt-0.15.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/A/AZ/AZAWAWI/Locale-Msgfmt-0.15.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libl/liblocale-msgfmt-perl/liblocale-msgfmt-perl_0.15-2.debian.tar.xz
@@ -79,7 +79,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Locale-Msgfmt
-cp %{_builddir}/Locale-Msgfmt-0.15/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Locale-Msgfmt/ffd6a5ea3cafbd9dbbd9ab11a831de183d860ac8
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Locale-Msgfmt/ffd6a5ea3cafbd9dbbd9ab11a831de183d860ac8
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -106,8 +106,8 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Locale/Msgfmt.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Locale/Msgfmt/Utils.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Locale/Msgfmt/mo.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Locale/Msgfmt/po.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Module/Install/Msgfmt.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Locale/Msgfmt.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Locale/Msgfmt/Utils.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Locale/Msgfmt/mo.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Locale/Msgfmt/po.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Module/Install/Msgfmt.pm
