@@ -4,7 +4,7 @@
 #
 Name     : perl-Locale-Msgfmt
 Version  : 0.15
-Release  : 13
+Release  : 14
 URL      : https://cpan.metacpan.org/authors/id/A/AZ/AZAWAWI/Locale-Msgfmt-0.15.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/A/AZ/AZAWAWI/Locale-Msgfmt-0.15.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libl/liblocale-msgfmt-perl/liblocale-msgfmt-perl_0.15-2.debian.tar.xz
@@ -106,8 +106,8 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/Locale/Msgfmt.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Locale/Msgfmt/Utils.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Locale/Msgfmt/mo.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Locale/Msgfmt/po.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Module/Install/Msgfmt.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Locale/Msgfmt.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Locale/Msgfmt/Utils.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Locale/Msgfmt/mo.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Locale/Msgfmt/po.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Module/Install/Msgfmt.pm
