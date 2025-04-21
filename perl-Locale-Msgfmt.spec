@@ -7,7 +7,7 @@
 #
 Name     : perl-Locale-Msgfmt
 Version  : 0.15
-Release  : 30
+Release  : 31
 URL      : https://cpan.metacpan.org/authors/id/A/AZ/AZAWAWI/Locale-Msgfmt-0.15.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/A/AZ/AZAWAWI/Locale-Msgfmt-0.15.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libl/liblocale-msgfmt-perl/liblocale-msgfmt-perl_0.15-2.debian.tar.xz
